@@ -89,17 +89,15 @@ const Content = ({currentUser, setViewAlert}) => {
 				}
 			</div>
 			{ contectView == 0 ?
-				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success' style={{fontSize:'40px'}} onClick={() => {setContectView(1)}}/>
+				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success shadow-lg' style={{fontSize:'40px'}} onClick={() => {setContectView(1)}}/>
 			: contectView == 1 ?
-				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success' style={{fontSize:'40px', transform:"rotate(45deg)"}} onClick={() => {setContectView(0)}}/>
+				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success shadow-lg' style={{fontSize:'40px', transform:"rotate(45deg)"}} onClick={() => {setContectView(0)}}/>
 			: contectView == 2 ?
-				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success' style={{fontSize:'40px', transform:"rotate(45deg)"}} onClick={() => {setContectView(0)}}/>
+				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success shadow-lg' style={{fontSize:'40px', transform:"rotate(45deg)"}} onClick={() => {setContectView(0)}}/>
 			: contectView == 3 ?
-				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success' style={{fontSize:'40px', transform:"rotate(45deg)"}} onClick={() => {setContectView(0)}}/>
+				<FaPlusCircle className='position-absolute bottom-0 end-0 m-3 text-success shadow-lg' style={{fontSize:'40px', transform:"rotate(45deg)"}} onClick={() => {setContectView(0)}}/>
 			: null
 			}
-
-			
 		</section>
   )
 }
