@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from 'react'
-
-const Cargando = ({icon,text, typeStart }) => {
-
-    const [typeEnd, setTypeEnd] = useState(null);
-
-    useEffect(() => {
-        if(typeStart == 'cargando'){
-            setTypeEnd('red')
-        }
-    }, [])
+const Cargando = ({icon, text, type }) => {
     
 
   return (
     <div className=' d-flex justify-content-center' >
-        <div className={`position-fixed top-0 mt-3 p-3 px-4 d-flex rounded-3 shadow-lg ${ typeStart == 'cargando' ? 'bg-body-secondary': null}`}  >
+        <div className={`position-fixed top-0 mt-3 p-3 px-4 d-flex rounded-3 shadow-lg ${ type == 'cargando' ? 'bg-body-secondary': null}`}  >
             { icon == 'cargando' ? 
               <div className="spinner-border" role="status"><span className="visually-hidden">Loading...</span></div>
             : 

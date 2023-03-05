@@ -25,7 +25,7 @@ const Card = ({ currentUser,id, title, subTitle, img, contectView, setContectVie
 
   return (
     <div className="card m-2" style={{width: '18rem'}}>
-        <img src={imgRes} className="card-img-top" style={{height:'200px'}} alt={'./'+subTitle} />
+        <img src={imgRes} className="card-img-top img-fluid" style={{height:'200px', objectFit:'cover',objectPosition:'center'}} alt={'./'+subTitle} />
         <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{subTitle}</p>

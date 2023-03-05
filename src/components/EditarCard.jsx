@@ -45,7 +45,7 @@ const EditarCard = ({ setDatos, currentUser, infoCard, setContectView, setViewAl
 
   return (
     <div className="card mb-3">
-    <img src={infoCard.imgRes} className="card-img-top" alt="..." style={{height:'300px'}}/>
+    <img src={infoCard.imgRes} className="card-img-top" alt="..." style={{height:'400px', width:'100%', objectFit:'cover', objectPosition:'center'}}/>
     <div className='p-4 pt-2'>
         <label htmlFor="formFileLg" className="form-label">Si quieras cambiar la imagen, solo selecion otro aqui debajo</label>
         <input className="form-control form-control-lg" id="formFileLg" type="file" onChange={handleChangeImg} />

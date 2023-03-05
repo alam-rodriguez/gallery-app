@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from 'react';
-
 import { AiFillCheckCircle } from 'react-icons/ai';
 
 const Bien = ({text, type,setViewAlert }) => {
@@ -8,7 +6,6 @@ const Bien = ({text, type,setViewAlert }) => {
         setViewAlert(null)
     }, 5000);
     
-
   return (
     <div className=' d-flex justify-content-center' >
         <div className={`position-fixed top-0 mt-3 p-3 px-4 d-flex rounded-3 shadow-lg ${ type == 'bien' ? 'bg-primary': null}`}  >
@@ -24,5 +21,3 @@ const Bien = ({text, type,setViewAlert }) => {
 }
 
 export default Bien;
-
-
